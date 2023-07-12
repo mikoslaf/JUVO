@@ -1,0 +1,31 @@
+@import "mixins";
+
+
+.blok {
+    @include display-flex(0,0,0,column);
+    &__tytul {
+        color: red;
+        font-size: 3.5vw;
+        width: 100%;
+        @include responsive(600){
+            & {
+                font-size: 4.5vw;
+            }
+        }
+    }
+    &__text {
+        width: 100%;
+        color: black;
+        font-size: 1.2vw;
+        margin-top: 2vw;
+
+        @include responsive(600){
+            & {
+                font-size: 2.2vw;
+            }
+        }
+    }
+    &__more {
+        margin-top: 3vw;
+    }
+}

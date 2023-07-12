@@ -1,0 +1,151 @@
+@import "mixins";
+
+.bloks {
+    &__contener {
+        @include display-flex(space-between,space-between,0,0,wrap);
+        width: 100%;
+    }
+    &__blok {
+        width: 32.5%;
+        background-color: white;
+        margin-bottom: 1vw;
+        border-radius: 15px;
+
+        @include responsive(600){
+            & {
+                width: 48.5%;
+            }
+        }
+
+        &--icons {
+            margin: 5vw 0 0 2vw;
+            width: 10%;
+
+            @include responsive(600){
+                & {
+                    width: 15%;
+                }
+            }
+        }
+        &--text {
+            font-size: 1.4vw;
+            margin: 1vw 0 5vw 2vw;
+
+            @include responsive(600){
+                & {
+                    font-size: 2.4vw;
+                }
+            }
+        }
+    }
+}
+.zespol {
+    &__napis {
+        font-size: 2.4vw;
+        width: 100%;
+        @include display-flex(center);
+        margin: 9vw 0 7vw 0;
+
+        @include responsive(600){
+            & {
+                font-size: 3.4vw;
+            }
+        }
+    }
+}
+
+.bloks2 {
+
+    @include display-flex(space-between,0,0,0,wrap);
+
+    &--container {
+        @include display-flex(space-between, 0,0,0,wrap);
+        width: 30%;
+        padding: 1.25vw;
+        background-color: #FAFAFA;
+        border-radius: 15px;
+
+        @include responsive(600){
+            & {
+                width: 100%;
+                margin-bottom: 4vw;
+            }
+        }
+    }
+
+    &--blok1 {
+        width: 50%;
+        font-size: 0.95vw;
+
+        @include responsive(600){
+            & {
+                font-size: 3vw;
+            }
+        }
+    }
+    &--blok2 {
+        margin: 2.6vw 0 2.6vw;
+        width: 90%;
+        font-size: 1.3vw;
+
+        @include responsive(600){
+            & {
+                font-size: 3.3vw;
+            }
+        }
+    }
+    &--linia {
+        margin: 0 0 2.2vw 0 ;
+    }
+    
+    &__napis {
+        margin-top: 15%;
+        @include display-flex(space-between,0,center);
+        width: 90%;
+        margin-bottom: 10%;
+
+        &--text {
+            font-size: 2vw;
+
+            @include responsive(600){
+                & {
+                    font-size: 3.5vw;
+                }
+            }
+        }
+        &--button {
+            border: 1px solid red;
+            color: red;
+            width: 12.5vw;
+            height: 2.5vw;
+            font-size: 1.1vw;
+            background: none;
+            border-radius: 10px;
+
+            @include responsive(600){
+                & {
+                    width: 24.5vw;
+                    height: 5.5vw;
+                    font-size: 2.5vw;
+                }
+            }
+        }
+    } 
+}
+
+.logo {
+    &--title {
+        margin: 6vw 0 0;
+        font-size: 2.2vw;
+    }
+    &--container {
+        padding: 3vw 0 3vw 0;
+        width: 100%;
+        @include display-flex(space-between, space-between,0,0,wrap);
+        background-color: white;
+    }
+    &--blok {
+        width: 17%;
+
+    }
+}

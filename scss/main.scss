@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Noway-Round";
+    font-weight: 400;
+    src: url("./../fonts/NowayRound-Regular.otf");
+  }
+
+html,body {
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-family: "Noway-Round", sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+@import "menu.scss";
+@import "blok.scss";
+@import "slider.scss";
+@import "bloks.scss";
+
+.main {
+    
+    &__contener {
+        padding-left: 7%;
+        padding-right: 7%;
+        &--background {
+            @include background("./../img/trojkaty.svg",28.5vw, no-repeat, 129.5vw);
+        }
+        &--background2 {
+           @include background("./../img/tlo2.svg",-89.5vw 16vw, no-repeat, 275%);
+            
+           @include responsive(600){
+            & {
+                background-position: -89.5vw 111vw;
+            }
+        }
+        
+        }
+    }
+}
